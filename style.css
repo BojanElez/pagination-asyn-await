@@ -1,0 +1,65 @@
+.tasks {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 2% 5%;
+  font-family: "Lato", sans-serif;
+  position: relative;
+}
+h1 {
+  display: flex;
+  justify-content: center;
+}
+.card {
+  box-sizing: border-box;
+  margin: 18px 0;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  min-height: 320px;
+  width: 250px;
+  padding: 12px;
+  cursor: pointer;
+  background: #64affa;
+}
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.2);
+}
+.card .headline h2 {
+  font-size: 20px;
+}
+.pagination {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2.5% 5%;
+  height: 80px;
+  line-height: 80px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+}
+.pagination ul {
+  position: relative;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.25);
+  margin-bottom: 20px;
+}
+.pagination ul li.pagination-items {
+  flex: 1;
+  list-style: none;
+  text-align: center;
+  position: relative;
+  font-size: 20px;
+  font-weight: bold;
+  transition: 0.5s ease;
+  cursor: pointer;
+  user-select: none;
+  min-width: 100px;
+}
+.pagination ul li.pagination-items.active {
+  background-color: rgba(255, 255, 255, 0.25);
+  color: #f564a9;
+  border-bottom: 5px solid #f564a9;
+}
